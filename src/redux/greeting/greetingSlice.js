@@ -5,7 +5,7 @@ export const getRandomGreeting = createAsyncThunk('greeting/getRandomGreeting', 
   const apiURL = 'http://localhost:3000/random_greeting';
 
   const response = await axios.get(apiURL);
-  console.log(response.data)
+  console.log(response.data);
   return response.data.greeting;
 });
 
